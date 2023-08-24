@@ -8,19 +8,49 @@
     <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
-        .font-lato{
+
+        .font-lato {
             font-family: 'Lato', sans-serif;
         }
     </style>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.1/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/2b7799a4e2.js" crossorigin="anonymous"></script>
 </head>
 
 <body class="font-lato">
     <!-- header  -->
     <header>
         <!-- navbar  -->
-        
+        <nav class="container mx-auto lg:px-12 md:px-10 py-5 my-7 rounded-[600px] flex justify-between items-center lg:bg-[#F85559] md:bg-[#F85559]">
+            <div class="text-white hidden lg:block md:block lg:text-xl md:text-sm">
+                <ul class="flex gap-7 list-none">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Shop</a></li>
+                    <li><a href="">All Fruits</a></li>
+                </ul>
+            </div>
+            
+            <div class="flex items-center justify-center font-bold text-2xl lg:text-3xl md:text-xl lg:text-white md:text-white">
+                <img src="/images/logo.png" class="w-10" alt="">
+                <h3 class="ml-2">Fruit Burst</h3>
+            </div>
+            <div class="dropdown dropdown-end lg:hidden md:hidden">
+                <label tabindex="0" class=" m-1"><i class="fa-solid fa-bars text-xl"></i></label>
+                <ul tabindex="0" class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Shop</a></li>
+                    <li><a href="">All Fruits</a></li>
+                </ul>
+              </div>
+            <div class="hidden md:block lg:block">
+                <input type="search" placeholder="Search here" class="inpu py-4 w-72 pr-6 px-5 rounded-[50px]"
+                    style="background-image: url(/images/Frame.svg); background-repeat: no-repeat; background-position: 95%;" />
+
+            </div>
+        </nav>
         <!-- banner -->
     </header>
     <!-- main  -->
